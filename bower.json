@@ -1,0 +1,32 @@
+{
+  "name": "hellolesssass",
+  "authors": [
+    "Anas Abu Farraj <anas.r.abufarraj@gmail.com>"
+  ],
+  "description": "A hello world project for less and sass",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "n",
+    "keywords"
+  ],
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "less": "^2.7.1",
+    "font-awesome": "fontawesome#^4.7.0",
+    "angular": "^1.5.8",
+    "jquery": "^3.1.1"
+  }
+}

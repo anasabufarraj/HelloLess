@@ -1,0 +1,53 @@
+@import "variables.less";
+@import "bourbon";
+
+// Main ------------------------------------
+html {
+    height: 100%;    
+}
+body {
+    background: url(apple-touch-icon.png) no-repeat center center;
+    background-color: @baseColor;
+}
+div {
+    .divMixin;
+	p {                                  // p inside div     
+		color: white; 
+		background-color: inherit;
+		padding: 5px;
+		margin: 5px;
+    } 
+    p#myId {                            // p inside div with id
+        color: orange;
+        &:hover {                       // hover for p inside div
+            color: darken(@baseColor, 70%);
+            background-color: inherit;
+        }
+    }
+}
+
+img {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+// Dialogues ------------------------------
+.alert {
+    .alert(@type_w); 
+}
+
+// Media queries --------------------------
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+  /* Styles for mobile */
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* Styles for tablet */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  /* Don't forget your Retina CSS! */
+  body {
+    background-size: 72px 72px;
+  }
+}
+// ---------------------------------------

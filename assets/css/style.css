@@ -1,0 +1,63 @@
+.divMixin {
+  padding: 20px;
+  margin: 50px;
+  color: #fff;
+  border: 1px solid #02080d;
+  border-radius: 8px;
+  background-color: #0a2e52;
+  font-family: arial;
+}
+html {
+  height: 100%;
+}
+body {
+  background: url(apple-touch-icon.png) no-repeat center center;
+  background-color: #0f4880;
+}
+div {
+  padding: 20px;
+  margin: 50px;
+  color: #fff;
+  border: 1px solid #02080d;
+  border-radius: 8px;
+  background-color: #0a2e52;
+  font-family: arial;
+}
+div p {
+  color: white;
+  background-color: inherit;
+  padding: 5px;
+  margin: 5px;
+}
+div p#myId {
+  color: orange;
+}
+div p#myId:hover {
+  color: #000000;
+  background-color: inherit;
+}
+img {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+}
+.alert {
+  padding: 20px;
+  margin: 50px;
+  color: #bfbf40;
+  background-color: yellow;
+  border-radius: 8px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles for mobile */
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles for tablet */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  /* Don't forget your Retina CSS! */
+  body {
+    background-size: 72px 72px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

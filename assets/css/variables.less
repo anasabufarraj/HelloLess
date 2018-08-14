@@ -1,0 +1,43 @@
+// @import "styles.less" -------------
+
+@baseColor: mix(dodgerblue, black);
+@textColor: #fff;
+@half-px: 50px;
+@type_w: warning;
+@type_e: error;
+@type_s: successful;
+
+// Mixins -----------------------------------
+.divMixin {
+    padding: 20px;
+    margin: @half-px;
+    color: @textColor;
+    border: 1px solid darken(@baseColor, 25%);
+    border-radius: 8px;
+    background-color: darken(@baseColor, 10%);
+    font-family: arial;
+}
+
+.alert(warning) {
+    padding: 20px;
+    margin: @half-px;
+    color: desaturate(yellow, 50%);
+    background-color: yellow;
+    border-radius: 8px;
+}
+.alert(error) {
+    padding: 20px;
+    margin: @half-px;
+    color: lighten(red, 30%);
+    background-color: red;
+    border-radius: 8px;
+}
+.alert(successful) {
+    padding: 20px;
+    margin: @half-px;
+    color: lighten(green, 30%);
+    background-color: green;
+    border-radius: 8px;
+}
+
+// -----------------------------------
